@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONGSKIE RESTO Menu</title>
+    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('image/ONGSKIE\ RESTO\ PHOTO.jpeg'); 
+            background-size: cover;
+            background-position: center;
+            color: #fff; 
+            margin-top: 60px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #ffffff;
+            margin-top: 60px;
+        }
+
+        h1, h2, h3 {
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: .5%;
+        }
+
+        
+        header {
+            background-color: #343a40;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header nav {
+            margin-right: -50px;
+        }
+
+        header ul.navbar-nav li {
+            padding: 0 15px;
+        }
+
+        
+        main {
+            padding-top: 100px;
+        }
+
+        .landscape-photo img {
+            display: block;
+            margin: 0 auto 20px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .slider-container {
+            margin-bottom: 40px;
+        }
+
+        .slider img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+       
+        .start-order-btn {
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .start-order-btn:hover {
+            background-color: #218838;
+        }
+
+        
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 40px 0;
+        }
+
+        footer ul {
+            padding-left: 0;
+            list-style: none;
+        }
+
+        footer ul li {
+            padding: 5px 0;
+        }
+
+        footer .form-control {
+            border-radius: 20px;
+        }
+
+        footer button.btn-primary {
+            border-radius: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="index.html">ONGSKIE RESTO</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="SignIn.html" data-toggle="modal" data-target="#signinModal">Sign In</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+        <div class="modal fade" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="signinModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signinModalLabel">Sign In</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        
+                        <form id="signInForm">
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input type="text" class="form-control" id="username" placeholder="Enter username">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Sign In</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="AboutUs.html">About Us</a></li>
+                        <li><a href="TermsAndConditions.html">Terms and Conditions</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                        <li><a href="StayConnected.html">Stay Connected</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>santa, maria bulacan</p>
+                    <p>Email: raymondray101103@gmail.com</p>
+                    <p>Phone: +639566246974</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Newsletter</h5>
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2024 ONGSKIE RESTO. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="script.js"></script>
+    
+    
+    <script>
+        document.getElementById('signInForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            
+            window.location.href = 'index.html';
+        });
+    </script>
+
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
